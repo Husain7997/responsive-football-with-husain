@@ -1,6 +1,6 @@
 /* fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+/* common style  */
 body{
     background: #000000;
     font-family: 'Poppins', sans-serif;
@@ -38,8 +38,11 @@ align-items: center;
 .navbar li{
     list-style: none;
     margin-left: 36px;
-   
-
+}
+.navbar li a:hover{
+    background-color: lavender;
+color: orange;
+padding: 10px;
 }
 .navbar li a{
     text-decoration: none;
@@ -47,6 +50,7 @@ align-items: center;
     font-weight: 700;
     color: #FFFFFF;
 }
+/* button style  */
 .button{
     background-color: #E02C6D;
     
@@ -164,6 +168,7 @@ text-align: justify;
     width: 400px;
 height: 350px;
 }
+/* footer style  */
 .footer{
     display: flex;
     flex-direction: column;
