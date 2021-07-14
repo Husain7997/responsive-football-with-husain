@@ -1,0 +1,248 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    background: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+main, header, footer{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.container{
+    width: 1100px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    background-color:blue;
+    width: 1100px;
+    height: 600px;
+}
+/* navbar  */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    justify-content: space-between;
+    
+}
+.navbar ul {
+    display: flex;
+}
+.navbar li{
+    list-style: none;
+    margin-left: 36px;
+   
+
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.button{
+    background-color: #E02C6D;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 24px;
+    margin-right: 20px;
+}
+
+.button a{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+}
+.fa-sign{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* header caption and bannar */
+.header-info{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.header-caption{
+    width: 485px;
+    margin-left: 30px;
+}
+.header-caption h1{
+    color: #FFFFFF;
+    font-size: 64px; 
+   
+}
+.header-image img{
+    width: 500px;px;
+    height: 400px;
+    position: relative;
+    top: 80px;
+}
+.header:hover .header-image img{
+transform: rotate(360deg);
+transition: transform 1s ease-in-out;
+}
+.header:hover .button{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+/* main content  */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.player{
+    width: 230px;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.player-image img{
+    width: 220px;
+    height: 200px;
+}
+.player-info{
+    width: 220px;
+    text-align: justify;
+}
+.player-info h2{
+    font-weight: bold;
+font-size: 20px;
+}
+.player-info p{
+    font-size: 16px;
+}
+/* All Highlights */
+.all-highlights{
+display: flex;
+flex-direction: column;
+margin-top: 100px;
+}
+.highlights{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 15px;
+padding: 15px;
+}
+.highlights-caption{
+    width: 350px;
+    padding-right: 66px;
+    margin: 10px;
+    margin-right: 0px 30px 0px 0px;
+}
+.highlights-caption h1{
+    font-size: 60px;
+    color: #0A0826;
+    font-weight: 900;
+}
+.highlights-caption p{
+font-size: 16px;
+text-align: justify;
+}
+
+.highlights-image img{
+    width: 400px;
+height: 350px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+.footer-logo img{
+    width: 300px;
+
+}
+.footer-icon{
+    width: 200px;
+    margin-left: 70px;
+}
+.footer-icon a{
+    padding: 10px;
+}
+small{
+    text-align: center;
+    margin-left: 80px;
+}
+
+/* media queri */
+
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    
+    .container {
+        width: 100%;
+        padding-left: 23px;
+        flex-direction: column-reverse;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+      }
+      .navbar{
+        display: none;
+    }
+    .header{
+        width: 550px;
+        height: 540px;
+    }
+    .header-info{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        
+    }
+    
+    .header-caption{
+        width: 205px;
+        margin-left: 15px;
+    }
+    .header-caption h1{
+        color: #FFFFFF;
+        font-size: 30px; 
+       
+    }
+    .header-image img{
+        width: 300px;
+        height: 200px;
+        top: 80px;
+    }
+    .players{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .highlights{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+    }
+    
